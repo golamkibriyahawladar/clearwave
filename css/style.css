@@ -1,40 +1,32 @@
-:root {
-    /* Background */
+﻿:root {
     --bg: #E8F4F2;
     --bg-alt: #DFF0EE;
     --surface: #F4FAFA;
     --surface-2: #FFFFFF;
 
-    /* Accent / Brand Colors */
     --accent: #1A7A6E;
     --accent-mid: #2A9D8F;
     --accent-light: #5BBFB5;
     --accent-ghost: rgba(26, 122, 110, 0.08);
     --accent-border: rgba(26, 122, 110, 0.15);
 
-    /* Text Colors */
     --text-1: #0D1E1C;
     --text-2: #3A5C58;
     --text-3: #6B8C88;
 
-    /* Border Color */
     --border: rgba(13, 30, 28, 0.08);
 
-    /* Dashboard Dots*/
     --dot-red: #FF5F57;
     --dot-yellow: #FFBD2E;
     --dot-green: #28CA41;
 
-    /* Shadows */
     --shadow-sm: 0 2px 12px rgba(13, 30, 28, 0.06);
     --shadow-md: 0 8px 32px rgba(13, 30, 28, 0.10);
     --shadow-lg: 0 24px 64px rgba(13, 30, 28, 0.13);
 
-    /* Animation & Transition Setup */
     --silk: cubic-bezier(0.16, 1, 0.3, 1);
     --silk-dur: 0.8s;
 
-    /* Border Radius */
     --radius: 16px;
     --radius-lg: 24px;
 }
@@ -58,7 +50,6 @@ button {
     cursor: pointer;
 }
 
-/* Global Container */
 .container {
     max-width: 1224px;
     margin: 0 auto;
@@ -123,9 +114,7 @@ header .nav .nav_menu {
     width: 80%;
 }
 
-header .nav .nav_items {
-    
-}
+header .nav .nav_items {}
 
 header .nav .nav_items ul {
     display: flex;
@@ -248,7 +237,6 @@ Hero Section
     align-items: center;
     justify-content: space-between;
     min-height: calc(100vh - 110px);
-    /* Adjusts for header height to fit within screen */
     max-width: 1160px;
     margin: 0 auto;
     padding: 0 30px 30px 30px;
@@ -378,7 +366,6 @@ Hero Section
     gap: 5px;
 }
 
-/* Hero Graph */
 .hero_graph {
     flex: 1;
     position: relative;
@@ -507,7 +494,6 @@ Hero Section
     color: var(--accent);
 }
 
-/* Floating Cards */
 .float_card {
     position: absolute;
     background: var(--surface-2);
@@ -547,7 +533,6 @@ Hero Section
     padding: 12px 18px;
     border: 1px solid var(--border);
     animation-delay: 2s;
-    /* Delayed animation to stagger the floating effect */
 }
 
 .bottom_card .icon_box {
@@ -765,7 +750,6 @@ Mobile App
     flex-direction: column;
 }
 
-/* Card positions — z-index only, transforms set entirely by JS */
 .phone_card[data-pos="center"] {
     z-index: 10;
 }
@@ -785,7 +769,6 @@ Mobile App
     z-index: 4;
 }
 
-/* Reflection floor line */
 .carousel_stage::after {
     content: "";
     position: absolute;
@@ -796,7 +779,6 @@ Mobile App
     background: linear-gradient(90deg, transparent, var(--border), transparent);
 }
 
-/* Controls */
 .carousel_controls {
     display: flex;
     align-items: center;
@@ -848,7 +830,6 @@ Mobile App
     border-radius: 4px;
 }
 
-/* Zoom control */
 .carousel_zoom {
     display: flex;
     align-items: center;
@@ -917,9 +898,10 @@ Mobile App
 
 
 
-
 /* =========================================
-   Features Section
+===============
+Features Section
+=============== 
    ========================================= */
 .features_section {
     padding: 120px 0;
@@ -1129,10 +1111,10 @@ button {
     color: var(--text-3);
 }
 
-/* Responsive */
-
 /* =========================================
-   Stats Section
+===============
+Stats Section
+=============== 
    ========================================= */
 .stats_section {
     padding: 80px 0;
@@ -1202,9 +1184,12 @@ button {
     line-height: 1.5;
 }
 
-/* Responsive Stats */
 
-/* PRICING ══════════════════════════════════════════ */
+/* =========================================
+===============
+PRICING
+=============== 
+   ========================================= */
 .pricing_section {
     padding: 100px 0;
     background: var(--surface);
@@ -1477,9 +1462,11 @@ button {
     background: var(--accent-mid);
 }
 
-/* ══════════════════════════════════════════
-       8. TESTIMONIALS
-    ══════════════════════════════════════════ */
+/* =========================================
+===============
+TESTIMONIALS
+=============== 
+   ========================================= */
 .testimonials_section {
     padding: 100px 0;
 }
@@ -1575,9 +1562,12 @@ button {
     margin-top: 1px;
 }
 
-/* ══════════════════════════════════════════
-       9. INTEGRATIONS
-    ══════════════════════════════════════════ */
+/* =========================================
+===============
+INTEGRATIONS
+=============== 
+   ========================================= */
+
 .integrations_section {
     padding: 100px 0;
     background: var(--surface);
@@ -1634,9 +1624,10 @@ button {
     color: var(--accent);
 }
 
-/* ══════════════════════════════════════════
-       10. FAQ
-    ══════════════════════════════════════════ */
+/* =========================================
+===============
+FAQ=============== 
+   ========================================= */
 .faq_section {
     padding: 100px 0;
 }
@@ -1748,9 +1739,12 @@ button {
     padding-bottom: 20px;
 }
 
-/* ══════════════════════════════════════════
-       11. CTA BANNER
-    ══════════════════════════════════════════ */
+
+/* =========================================
+===============
+CTA BANNER
+=============== 
+   ========================================= */
 .cta_section {
     padding: 100px 0;
 }
@@ -1870,9 +1864,13 @@ button {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* ══════════════════════════════════════════
-       12. FOOTER
-    ══════════════════════════════════════════ */
+
+
+/* =========================================
+===============
+FOOTER
+=============== 
+========================================= */
 .footer {
     background: var(--text-1);
     padding: 80px 0 40px;
@@ -1989,18 +1987,9 @@ button {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* ══════════════════════════════════════════
-   RESPONSIVE (Integrations, FAQ, CTA, Footer)
-══════════════════════════════════════════ */
 
-/* ══════════════════════════════════════════
-   SECTION TYPOGRAPHY
-══════════════════════════════════════════ */
-/* =========================================
-   Reusable Section Typography Utilities
-   ========================================= */
 
-/* The main wrapper for centering a section header */
+
 .section_header {
     text-align: center;
     margin-bottom: 56px;
@@ -2009,7 +1998,6 @@ button {
     align-items: center;
 }
 
-/* Badge/Label */
 .section_label {
     display: inline-flex;
     align-items: center;
@@ -2034,7 +2022,6 @@ button {
     border-radius: 50%;
 }
 
-/* Section Title */
 .section_title {
     font-family: 'DM Sans', sans-serif;
     font-size: clamp(2rem, 4vw, 3rem);
@@ -2051,7 +2038,6 @@ button {
     color: var(--accent);
 }
 
-/* Section Subtitle */
 .section_sub {
     font-size: 1.0625rem;
     line-height: 1.75;
@@ -2061,17 +2047,15 @@ button {
     text-align: center;
 }
 
-/* Reveal utility for animations if used */
 .reveal {
     opacity: 1;
     transform: none;
 }
 
 /* =========================================
-   CTA Typography Utilities (Dark Theme)
+   CTA  Utilities 
    ========================================= */
 
-/* Dark Badge/Label with Star */
 .cta_label {
     display: inline-flex;
     align-items: center;
@@ -2105,7 +2089,6 @@ button {
     color: var(--accent-light);
 }
 
-/* Dark Section Subtitle */
 .cta_sub {
     font-size: 1rem;
     line-height: 1.7;
@@ -2114,9 +2097,12 @@ button {
 }
 
 
-/* ==========================================================================
-   RESPONSIVE MEDIA QUERIES
-   ========================================================================== */
+
+/* =========================================
+===============
+RESPONSIVE MEDIA QUERIES
+=============== 
+   ========================================= */
 
 @media screen and (min-width: 1200px) {
     header .nav {
@@ -2130,7 +2116,7 @@ button {
     header .nav {
         padding: 25px 32px;
     }
-    
+
     header .nav .nav_items ul {
         gap: 15px;
     }
@@ -2335,10 +2321,11 @@ button {
 
     /* Sidebar overlay containing both nav items and login btns */
     header .nav .nav_menu {
-       top: 0;
+        top: 0;
         right: -100%;
-        height: 100vh;  position: fixed;
-       
+        height: 100vh;
+        position: fixed;
+
         width: 70%;
         max-width: 320px;
         background-color: var(--surface);
@@ -2377,7 +2364,6 @@ button {
         display: block;
         font-size: 1.1rem;
         padding: 10px 0;
-        /* Removing side padding for left-alignment */
     }
 
     header .nav .nav_items ul li a:hover {
